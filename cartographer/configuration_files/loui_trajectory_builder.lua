@@ -12,8 +12,8 @@
 -- See the License for the specific language governing permissions and
 -- limitations under the License.
 
-include "trajectory_builder_2d.lua"
-include "trajectory_builder_3d.lua"
+include "loui_trajectory_builder_2d.lua"
+include "loui_trajectory_builder_3d.lua"
 
 TRAJECTORY_BUILDER = {
   trajectory_builder_2d = TRAJECTORY_BUILDER_2D,

@@ -13,9 +13,9 @@
 -- limitations under the License.
 
 TRAJECTORY_BUILDER_2D = {
-  use_imu_data = false,
-  min_range = 0.15,
-  max_range = 15.,
+  use_imu_data = true,
+  min_range = 0.,
+  max_range = 30.,
   min_z = -0.8,
   max_z = 2.,
   missing_data_ray_length = 5.,
@@ -25,13 +25,13 @@ TRAJECTORY_BUILDER_2D = {
   adaptive_voxel_filter = {
     max_length = 0.5,
     min_num_points = 200,
-    max_range = 30.,
+    max_range = 50.,
   },
 
   loop_closure_adaptive_voxel_filter = {
     max_length = 0.9,
     min_num_points = 100,
-    max_range = 30.,
+    max_range = 50.,
   },
 
   use_online_correlative_scan_matching = false,
@@ -85,7 +85,7 @@ TRAJECTORY_BUILDER_2D = {
   },
 
   submaps = {
-    num_range_data = 100,
+    num_range_data = 90,
     grid_options_2d = {
       grid_type = "PROBABILITY_GRID",
       resolution = 0.05,

@@ -12,7 +12,7 @@
 -- See the License for the specific language governing permissions and
 -- limitations under the License.
 
-include "pose_graph.lua"
+include "loui_pose_graph.lua"
 
 MAP_BUILDER = {
   use_trajectory_builder_2d = false,
